@@ -1,0 +1,19 @@
+{
+  "name": "react-redux-saga-tutorial",
+  "version": "1.0.0",
+  "description": "some description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivangeorgiew/react-redux-saga-tutorial.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivangeorgiew/react-redux-saga-tutorial/issues"
+  },
+  "homepage": "https://github.com/ivangeorgiew/react-redux-saga-tutorial#readme"
+}
