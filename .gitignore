@@ -31,7 +31,3 @@ package-lock.json
 
 #swagger
 swagger-spec
-
-
-package-lock.json
-.npmrc

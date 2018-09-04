@@ -1,0 +1,9 @@
+@import '~connect-bootstrap/scss/_connect-common-variables';
+
+html.dark {
+    @import '~connect-bootstrap/scss/_connect-dark-variables';
+}
+
+html.light {
+    @import '~connect-bootstrap/scss/_connect-light-variables';
+}

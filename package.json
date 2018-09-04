@@ -1,19 +1,84 @@
 {
-  "name": "react-redux-saga-tutorial",
-  "version": "1.0.0",
-  "description": "some description",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ivangeorgiew/react-redux-saga-tutorial.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ivangeorgiew/react-redux-saga-tutorial/issues"
-  },
-  "homepage": "https://github.com/ivangeorgiew/react-redux-saga-tutorial#readme"
+    "name": "react-redux-saga-tutorial",
+    "version": "1.0.0",
+    "description": "some description",
+    "main": "webpack.config.js",
+    "scripts": {
+        "start": "cross-env NODE_ENV=development node devServer.js -- --dev",
+        "lock": "npm shrinkwrap --dev",
+        "lint": "eslint app/js --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ivangeorgiew/react-redux-saga-tutorial.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ivangeorgiew/react-redux-saga-tutorial/issues"
+    },
+    "homepage": "https://github.com/ivangeorgiew/react-redux-saga-tutorial#readme",
+    "devDependencies": {
+        "ajv": "6.3.0",
+        "babel-eslint": "7.2.3",
+        "babel-loader": "7.1.1",
+        "body-parser": "1.15.2",
+        "css-loader": "0.28.1",
+        "chokidar": "2.0.3",
+        "eslint": "4.1.1",
+        "eslint-config-standard": "10.2.1",
+        "eslint-config-standard-react": "5.0.0",
+        "eslint-plugin-promise": "3.3.0",
+        "eslint-plugin-react": "7.1.0",
+        "eslint-plugin-standard": "3.0.1",
+        "express": "4.14.0",
+        "file-loader": "0.11.2",
+        "happypack": "4.0.0",
+        "node-sass": "4.7.2",
+        "postcss": "6.0.1",
+        "postcss-cssnext": "2.11.0",
+        "postcss-import": "11.0.0",
+        "postcss-loader": "2.0.5",
+        "postcss-nested": "2.0.2",
+        "redux-devtools-extension": "2.13.2",
+        "redux-immutable": "4.0.0",
+        "resolve-url-loader": "2.3.0",
+        "sass-loader": "6.0.6",
+        "standard": "10.0.2",
+        "style-loader": "0.18.2",
+        "stylelint-config-standard": "17.0.0",
+        "url-loader": "0.5.7",
+        "webpack-dev-middleware": "1.7.0",
+        "webpack-hot-middleware": "2.16.1"
+    },
+    "dependencies": {
+        "babel-core": "6.17.0",
+        "babel-polyfill": "6.16.0",
+        "babel-preset-es2015": "6.16.0",
+        "babel-preset-react": "6.16.0",
+        "babel-preset-stage-1": "6.16.0",
+        "classnames": "2.2.5",
+        "connect-bootstrap": "./packages/connect-bootstrap-2.1.1.tar.gz",
+        "cross-env": "5.0.1",
+        "font-awesome": "4.7.0",
+        "immutable": "3.8.2",
+        "moment": "2.18.1",
+        "prop-types": "15.5.6",
+        "ramda": "0.25.0",
+        "react": "15.5.4",
+        "react-dom": "15.4.0",
+        "react-hot-loader": "4.1.1",
+        "react-immutable-proptypes": "2.1.0",
+        "react-loader-advanced": "1.6.2",
+        "react-notifications": "1.4.3",
+        "react-redux": "5.0.6",
+        "react-router": "3.0.2",
+        "react-router-redux": "4.0.5",
+        "react-select": "1.0.0-rc.2",
+        "reactstrap": "5.0.0-alpha.4",
+        "redux": "3.7.2",
+        "redux-saga": "0.15.4",
+        "reselect": "3.0.0",
+        "webpack": "3.8.1"
+    }
 }
