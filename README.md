@@ -47,3 +47,8 @@ to create the initial `package.json` file
 
 - Once you initiate the development server with `npm start`, you can go to
   http://locahost:3000 to see the running app
+
+### Step 2 - write out everything from now on instead of copy/pasting:
+- Go and do the react tutorial at https://reactjs.org/tutorial/tutorial.html#adding-time-travel
+  if you haven't already
+- 

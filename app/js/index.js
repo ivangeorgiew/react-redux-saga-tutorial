@@ -1,19 +1,26 @@
-// load the scss files
 import 'connect-bootstrap/scss/connect-bootstrap.scss'
 import '../styles/index.scss'
 import React from 'react'
 import { render } from 'react-dom'
+import { AppContainer } from 'react-hot-loader'
+import Root from 'components/Root'
 
-// the root component - an arrow function that simply returns a div
-const Root = () => {
-    return <div>Hello World</div>
-}
-
-// the function that puts a component inside the div with id #app from the html file
+// add AppContainer in order to have hot-reloading of components
 const renderRoot = Component => render(
-    <Component />,
+    <AppContainer>
+        <Component />
+    </AppContainer>,
     document.getElementById('app')
 )
 
-// when the DOM contentent is loaded - render the root component
+if (module.hot) {
+    // when a change to the Root component was detected, re-require it
+    // in order to have the changes without reloading the page
+    module.hot.accept('./components/Root', () => {
+        const nextRoot = require('./components/Root').default
+
+        renderRoot(nextRoot)
+    })
+}
+
 window.addEventListener('DOMContentLoaded', () => { renderRoot(Root) }, false)
