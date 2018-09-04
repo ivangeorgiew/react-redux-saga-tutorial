@@ -1,0 +1,95 @@
+.Select-menu-outer {
+    z-index: 3;
+}
+
+/* Select elemets overrides */
+
+.Select.is-open > .Select-control,
+.Select.is-focused:not(.is-open) > .Select-control {
+    background: $connect-modal-bg;
+}
+
+/* END Select elemets overrides */
+
+.select-container {
+    .Select-control {
+        min-height: 30px;
+    }
+
+    &.is-valid,
+    &.is-invalid {
+        padding: 0;
+
+        .Select-value {
+            margin: 5px 0 5px 5px;
+        }
+
+        .Select-multi-value-wrapper {
+            .Select-value {
+                margin: 4px 0;
+            }
+
+            .Select-input {
+                line-height: 28px;
+            }
+        }
+    }
+
+    .Select-clear-zone:hover {
+        .Select-clear {
+            color: $connect-icon-hover-color;
+        }
+    }
+
+    .Select-arrow-zone {
+        .connect-icon {
+            vertical-align: top;
+        }
+    }
+}
+
+.form-group {
+    textarea {
+        min-height: 80px;
+    }
+
+    .datepicker-container {
+        &.is-valid,
+        &.is-invalid {
+            padding: 0;
+        }
+    }
+}
+
+form {
+    .has-error {
+        > span {
+            display: block;
+            margin: 12px 0 0 12px;
+        }
+    }
+}
+
+.custom-control {
+    .custom-control-input {
+        &.indeterminate + .custom-control-indicator {
+            background-color: $connect-checkbox-background-checked;
+            border-color: $connect-checkbox-background-checked;
+
+            &::before {
+                content: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='%23fff'/%3E%3C/svg%3E");
+                background: none;
+                border: none;
+            }
+        }
+    }
+}
+
+.business-group-dropdown {
+    max-width: 330px;
+    margin: 10px 0 20px;
+
+    .Select-menu-outer {
+        z-index: 4;
+    }
+}

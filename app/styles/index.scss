@@ -2,8 +2,10 @@
 
 html.dark {
     @import '~connect-bootstrap/scss/_connect-dark-variables';
+    @import 'main';
 }
 
 html.light {
     @import '~connect-bootstrap/scss/_connect-light-variables';
+    @import 'main';
 }

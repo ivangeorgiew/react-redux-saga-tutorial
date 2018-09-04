@@ -1,0 +1,23 @@
+.card {
+    .btn-toolbar {
+        background: transparent;
+    }
+}
+
+.card-with-icon {
+    clear: both;
+
+    .card-icon {
+        display: inline-block;
+        width: 50px;
+        margin-top: -9px;
+        position: absolute;
+        top: 50%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .card-body {
+        padding-left: 50px;
+    }
+}

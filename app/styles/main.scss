@@ -1,0 +1,77 @@
+// Third party libraries
+
+@import 'third-party/react-datetime';
+
+// Global scss rule override imports
+
+@import 'buttons';
+@import 'card';
+@import 'datetime';
+@import 'forms';
+@import 'navigation';
+@import 'pagination';
+@import 'sidebar';
+@import 'modals';
+@import 'tabs';
+@import 'expandableRowsTable';
+
+// Page specific scss rule imports
+
+@import 'page/changelog';
+@import 'page/error-page';
+
+// Breakpoints
+
+// Global styles
+
+html.dark .alert {
+    min-width: unset;
+}
+
+h4 {
+    margin: 10px 0 20px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.invisible {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.connect-width-25 {
+    width: 25%;
+}
+
+.fa.fa-info.cell-fa-icon {
+    padding: 0 10px;
+    cursor: help;
+}
+
+.card-link,
+.clickable-cell {
+    color: $connect-highlight-color;
+}
+
+.form-group.table-form-group {
+    height: 29px;
+    margin-top: 0px;
+}
+
+.modal-body form {
+    overflow-y: auto;
+}
+
+.avoid-clicks {
+    pointer-events: none;
+}

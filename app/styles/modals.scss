@@ -1,0 +1,211 @@
+.modal-dialog {
+    max-width: 50rem;
+}
+
+.modal-title {
+    margin: 0;
+
+    .close {
+        position: absolute;
+        top: 3px;
+        right: 8px;
+        cursor: pointer;
+    }
+}
+
+.modal-body.loading {
+    margin: 0;
+}
+
+.modal-body {
+    margin: 0 0 60px;
+    padding: 10px 12px 0;
+    position: static;
+    background-color: $connect-modal-bg;
+
+    .form-group {
+        > div {
+            max-width: 100% !important;
+        }
+    }
+
+    form {
+        max-height: calc(100vh - 240px);
+
+        > div {
+            width: 100%;
+            margin: 0;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        & > :last-child {
+            padding: 15px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: $connect-bg-color;
+        }
+    }
+
+    .panel {
+        display: block;
+        margin-bottom: 1rem;
+
+        .panel-body {
+            display: inline-block;
+            width: 33.3%;
+            padding: 5px 10px 10px;
+            vertical-align: top;
+
+            .form-group {
+                margin: 0;
+            }
+
+            .Select-multi-value-wrapper {
+                .Select-value {
+                    margin: 8px 0;
+                }
+            }
+        }
+
+        &:nth-last-child(2) {
+            margin: 0;
+        }
+
+        &:nth-last-child(2),
+        &:nth-last-child(3) {
+            .Select-menu-outer {
+                top: auto;
+                bottom: 100%;
+            }
+        }
+    }
+
+    .mb-3:nth-last-child(2),
+    .drop-up-select {
+        .form-group {
+            margin: 0;
+        }
+
+        .Select-menu-outer {
+            top: auto;
+            bottom: 100%;
+        }
+    }
+}
+
+.employee-exceptions-modal {
+    .panel {
+        .panel-body {
+            width: 50%;
+        }
+    }
+}
+
+.modalBodyText {
+    text-align: left;
+    white-space: pre-line;
+}
+
+.modalHeaderText {
+    text-align: center;
+}
+
+.alert-modal-btn {
+    text-align: center;
+    width: 100%;
+}
+
+.add-scroll {
+    form {
+        overflow-y: auto;
+    }
+}
+
+.modal-scroll-container {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.modal-filter {
+    padding: 10px 0 5px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: $connect-form-control-bg;
+    z-index: 1;
+    transform: translateY(-10px);
+
+    .custom-control {
+        margin: 0;
+    }
+}
+
+/* checkbox-tree override */
+.react-checkbox-tree {
+    margin-top: 8px;
+}
+
+.select-container {
+    .Select--multi {
+        .Select-control {
+            display: flex;
+            height: auto;
+            align-items: center;
+            display: table;
+
+            .Select-multi-value-wrapper {
+                display: block;
+                overflow: visible;
+                width: 100%;
+
+                .Select-value {
+                    margin-top: 7px;
+                }
+
+                .Select-input {
+                    height: 2.75rem;
+                    margin-top: .5rem;
+
+                    input {
+                        padding: 0 0 12px;
+                        margin-top:0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.modal-body {
+    .form-control,
+    .form-control:focus:not(:read-only),
+    .form-control:hover:not(:disabled):not(:read-only),
+    .floating-form .form-group .form-control,
+    .floating-form .form-group .form-control:focus:not(:read-only),
+    .floating-form .form-group .form-control:hover:not(:disabled):not(:read-only),
+    .checkbox-group,
+    .checkbox-group:focus:not(:read-only),
+    .checkbox-group:hover:not(:disabled):not(:read-only),
+    .radio-group,
+    .radio-group:focus:not(:read-only),
+    .radio-group:hover:not(:disabled):not(:read-only),
+    .Select-control,
+    .Select-control:focus:not(:read-only),
+    .Select-control:hover:not(:disabled):not(:read-only),
+    .Select-input input,
+    .Select-input input:focus:not(:read-only),
+    .Select-input input:hover:not(:disabled):not(:read-only),
+    ng-select,
+    ng-select:focus:not(:read-only),
+    ng-select:hover:not(:disabled):not(:read-only),
+    ng-select .below,
+    ng-select .below:focus:not(:read-only),
+    ng-select .below:hover:not(:disabled):not(:read-only) {
+        background: transparent;
+    }
+}

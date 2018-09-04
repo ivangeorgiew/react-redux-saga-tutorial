@@ -1,0 +1,186 @@
+.expandable-rows-buttons {
+    padding: 2px;
+}
+
+.expandable-rows-table {
+    width: 100%;
+    min-height: 160px;
+    overflow: auto;
+    max-height: calc(100vh - 350px);
+
+    .expandable-rows-table-headers,
+    .expandable-rows-table-row {
+        white-space: nowrap;
+
+        .expandable-rows-table-header,
+        .expandable-row-cell,
+        .pointer {
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &.expandable-rows-table-select {
+                margin-bottom: 0;
+
+                &.form-check {
+                    padding-bottom: 0;
+                }
+            }
+
+            .selectable-header-field {
+                .custom-checkbox {
+                    margin: 7px 0 0 10px;
+                }
+            }
+
+            .custom-checkbox {
+                margin: 0 0 0 10px;
+                vertical-align: top;
+            }
+
+            .checkbox-inline,
+            .form-group {
+                margin: 0;
+            }
+        }
+
+        .expandable-rows-table-select,
+        .expandable-rows-table-expand,
+        .expandable-rows-table-remove,
+        .expandable-rows-table-edit,
+        .span-with-icon {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 65px;
+            min-width: 65px;
+            max-width: 65px;
+            text-align: center;
+        }
+    }
+
+    .expandable-rows-table-header,
+    .expandable-row-cell {
+        flex: 1;
+        min-width: 150px;
+    }
+
+    .expandable-rows-table-headers {
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: $connect-table-active-bg;
+        user-select: none;
+        // min-width: 980px;
+
+        .expandable-rows-table-header {
+            padding: 0 0.75rem;
+            vertical-align: top;
+            color: $connect-table-default-color;
+            background-color: $connect-table-active-bg;
+            text-transform: uppercase;
+            font-weight: lighter;
+
+            .form-group {
+                margin: 0 0 5px;
+            }
+
+            .sortable-header-field {
+                .sort-icon {
+                    padding: 0 5px;
+                    cursor: pointer;
+                    float: right;
+                }
+            }
+
+            .expandable-rows-table-header-text {
+                display: inline-block;
+            }
+        }
+    }
+
+    .expandable-rows-table-list {
+        // min-width: 980px;
+
+        .expandable-rows-table-row {
+            display: flex;
+            flex-wrap: nowrap;
+
+            &:hover {
+                .expandable-row-cell,
+                .pointer {
+                    background-color: $connect-table-hover-bg;
+                }
+
+                .Select-control {
+                    background-color: rgba($connect-table-hover-bg, 0.5);
+                }
+            }
+
+            .expandable-row-cell,
+            .pointer {
+                padding: 0.5rem 0.75rem;
+                border-top: 1px solid $connect-table-divider-color;
+                background-color: $connect-table-bg;
+                vertical-align: top;
+                line-height: 1.4rem;
+
+                .pointer {
+                    padding: 0;
+                    border: none;
+                    color: $connect-highlight-color;
+                }
+
+                &.btn-with-icon {
+                    .fa {
+                        color: $connect-icon-hover-color;
+                    }
+                }
+
+                &.card-link {
+                    height: 35px;
+                }
+            }
+
+            .employee {
+                box-shadow: none;
+
+                .pointer {
+                    padding: 0;
+                    border: 0;
+                    background: transparent;
+                }
+            }
+
+            .card-body {
+                .employee {
+                    background: none;
+
+                    .pointer {
+                        font-size: 13px;
+                        line-height: 19.5px;
+                    }
+                }
+            }
+
+            .employee {
+                .pointer {
+                    color: $connect-highlight-color;
+                }
+            }
+        }
+    }
+
+    .card-body {
+        white-space: normal;
+
+        .btn-toolbar {
+            padding: 0;
+        }
+    }
+}
+
+.expandable-rows-table-list,
+.expandable-rows-table-headers {
+    //min-width: fit-content;
+    min-width: auto;
+}

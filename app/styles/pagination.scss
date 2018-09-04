@@ -1,0 +1,30 @@
+.pagination-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .pagination-item-count-container,
+    .pagination {
+        padding: 10px 15px 0;
+        flex: 1;
+
+        .pagination-item-count {
+            margin-bottom: 10px;
+            color: $connect-text-muted;
+        }
+
+        .select-container {
+            display: inline-block;
+        }
+
+        .Select-control {
+            padding-left: 20px;
+        }
+
+        .Select-menu-outer {
+            top: auto;
+            bottom: 100%;
+        }
+    }
+}

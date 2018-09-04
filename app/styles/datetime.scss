@@ -1,0 +1,21 @@
+.datepicker-container {
+    margin: 0;
+    box-sizing: border-box;
+
+    &.is-valid,
+    &.is-invalid {
+        .connect-datepicker {
+            border: none;
+        }
+    }
+}
+
+.rdtPicker {
+    background-color: $connect-datepicker-bg;
+    border: none;
+}
+
+.rdtPicker thead tr:first-child th:hover {
+    color: $connect-content-color;
+    background-color: $connect-highlight-color;
+}

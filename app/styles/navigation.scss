@@ -1,0 +1,12 @@
+.navbar {
+    .navbar-collapse {
+        max-width: 100%;
+        overflow-y: auto;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            white-space: nowrap;
+        }
+    }
+}

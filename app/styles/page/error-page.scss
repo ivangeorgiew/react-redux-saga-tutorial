@@ -1,0 +1,44 @@
+.not-found-wrapper {
+    display: flex;
+    height: calc(100vh - 170px);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.no-requests-wrapper {
+    display: flex;
+    height: calc(100vh - 470px);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.not-found-container {
+    perspective: 200px;
+}
+
+.not-found-container p {
+    margin: 10px 0;
+    font-size: 3rem;
+}
+
+.not-found {
+    transform: rotateX(40deg);
+    -webkit-font-smoothing: antialiased;
+}
+
+.not-found .fa {
+    font-size: 200px;
+    animation: rotate 1s ease-in-out 3;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

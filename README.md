@@ -30,11 +30,11 @@ to create the initial `package.json` file
 
 - Add the `packages/connect-bootstrap-2.1.1.tar.gz` for the main styles.
 
-- Add the basic index html file as `app/index.html`.
+- Add the basic html file as `app/index.html`.
 
-- Add the basic index js file as `app/js/index.js`.
+- Add the basic js file as `app/js/index.js`.
 
-- Add the basic index scss file as `app/styles/index.scss`.
+- Add the scss files in `app/styles/*`.
 
 - Add the fonts files in `app/fonts/*`
 

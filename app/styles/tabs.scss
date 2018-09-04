@@ -1,0 +1,9 @@
+.tab-content {
+    .tab-pane {
+        .main-content {
+            max-height: calc(100vh - 175px);
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    }
+}
